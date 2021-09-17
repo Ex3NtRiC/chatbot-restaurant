@@ -14,7 +14,7 @@ lerna-debug.log*
 .DS_Store
 
 #Storge
-/.env.stage.dev
+.env.stage.dev
 
 # Tests
 /coverage
