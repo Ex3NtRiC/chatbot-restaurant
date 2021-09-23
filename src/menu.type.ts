@@ -15,6 +15,6 @@ export class MenuType {
   @Field()
   category: Category;
 
-  @Field((type) => [String])
-  keywords: string[];
+  @Field()
+  response: string;
 }

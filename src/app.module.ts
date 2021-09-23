@@ -6,6 +6,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { MenuSchema } from './menu.model';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { configValidationSchema } from './config.schema';
+import { Keywords } from './keywords.service';
 
 @Module({
   imports: [
@@ -38,6 +39,6 @@ import { configValidationSchema } from './config.schema';
     }),
   ],
   controllers: [],
-  providers: [AppService, AppResolver],
+  providers: [AppService, AppResolver, Keywords],
 })
 export class AppModule {}
