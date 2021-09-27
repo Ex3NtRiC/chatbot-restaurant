@@ -62,21 +62,29 @@ export class Keywords {
 
   abilities = ['what can you do', 'what can u do'];
 
-  ShowMenu = ['menu', 'show', 'view', 'have'];
+  ShowMenu = ['menu', 'show', 'view', 'what do you have', 'meal', 'meals'];
 
-  CATEGORY_MAIN = ['main', 'course', 'dish', 'meal'];
+  CATEGORY_MAIN = ['main', 'course', 'dish'];
 
-  CATEGORY_DRINKS = [
-    'drinks',
-    'drink',
-    'beverage',
-    'beverages',
-    'soft',
-    'juice',
-    'coffee',
-  ];
+  CATEGORY_DRINKS = ['drinks', 'drink', 'beverage', 'beverages', 'soft'];
 
   CATEGORY_DESSERT = ['dessert', 'sweets', 'sweet'];
+
+  Price_Filters = ['price', 'prices', 'how much', 'cost', 'costs'];
+
+  Name_Filters = ['name', 'called', 'names', 'named'];
+
+  Questions_Denial = ['Is there', 'Do you have', 'Have you got'];
+
+  Name_Question = [
+    'What is your name',
+    'What do they call you',
+    `What's your name`,
+    'What are you called',
+    'What name do you have',
+    'Who are you',
+    'What are you',
+  ];
 
   getName() {
     return this.NAME;
@@ -113,5 +121,17 @@ export class Keywords {
   }
   getAbilities() {
     return this.abilities;
+  }
+  getNameFilters() {
+    return this.Name_Filters;
+  }
+  getPriceFilters() {
+    return this.Price_Filters;
+  }
+  getQuestionsDenial() {
+    return this.Questions_Denial;
+  }
+  getAskName() {
+    return this.Name_Question;
   }
 }
